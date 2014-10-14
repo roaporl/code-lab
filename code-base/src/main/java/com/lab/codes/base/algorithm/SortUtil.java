@@ -11,7 +11,11 @@ public class SortUtil {
     }
 
     public static void main(String[] args) {
-        QuickSort quickSort = new QuickSort();
-        quickSort.sort(0, sourceArray.length - 1, sourceArray);
+//        QuickSort quickSort = new QuickSort();
+//        quickSort.sort(0, sourceArray.length - 1, sourceArray);
+
+        HeapSort<Integer> heapSort = new HeapSort<Integer>();
+        heapSort.heapSort(sourceArray, 5);
+        print(sourceArray);
     }
 }

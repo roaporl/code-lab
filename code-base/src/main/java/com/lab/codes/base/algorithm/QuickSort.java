@@ -6,7 +6,7 @@ import java.util.Stack;
 /**
  * Created by lab on 2014/10/12.
  */
-public class QuickSort implements Sort {
+public class QuickSort extends Sort {
     @Override
     public int compare(Object o1, Object o2) {
         return 0;
@@ -14,11 +14,6 @@ public class QuickSort implements Sort {
 
     public Integer[] a = {4,3,6,9,2,0,1,7,5,3};
 
-    private void swap(Integer[] a, int i, int j) {
-        Integer tmp = a[i];
-        a[i] = a[j];
-        a[j] = tmp;
-    }
 
     private void quickSort1(Integer[] a, int left, int right) {
         if (left<right) {
@@ -56,6 +51,7 @@ public class QuickSort implements Sort {
         }
     }
 
+    @SuppressWarnings("unchecked")
     private int partition(Integer[] a, int left, int right){
         int x = a[right];
         int i = left, j = right;
