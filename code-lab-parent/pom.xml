@@ -8,9 +8,6 @@
     <artifactId>code-lab-parent</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>../code-base</module>
-    </modules>
 
 
 </project>

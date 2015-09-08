@@ -14,8 +14,13 @@ public class QuickSort extends Sort {
 
     public Integer[] a = {4,3,6,9,2,0,1,7,5,3};
 
+    private static void swap(Integer[] a, int i, int j) {
+        Integer tmp = a[i];
+        a[i] = a[j];
+        a[j] = tmp;
+    }
 
-    private void quickSort1(Integer[] a, int left, int right) {
+    public static void quickSort1(Integer[] a, int left, int right) {
         if (left<right) {
             int p = partition(a, left, right);
             quickSort1(a, left, p-1);
@@ -52,7 +57,7 @@ public class QuickSort extends Sort {
     }
 
     @SuppressWarnings("unchecked")
-    private int partition(Integer[] a, int left, int right){
+    private static int partition(Integer[] a, int left, int right){
         int x = a[right];
         int i = left, j = right;
         while (true) {
