@@ -7,7 +7,7 @@ public class SortUtil {
 
 
     public static void print(Integer[] a) {
-        System.out.println(Joiner.on(",").join(a));
+        System.out.println(Joiner.on(", ").join(a));
     }
 
     public static void main(String[] args) {
@@ -15,7 +15,7 @@ public class SortUtil {
 //        quickSort.sort(0, sourceArray.length - 1, sourceArray);
 
         HeapSort<Integer> heapSort = new HeapSort<Integer>();
-        heapSort.heapSort(sourceArray, 5);
+        heapSort.heapSort(sourceArray, sourceArray.length);
         print(sourceArray);
     }
 }
