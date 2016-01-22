@@ -18,6 +18,8 @@
         <module>code-lab-parent</module>
         <module>code-base</module>
         <module>code-network</module>
+        <module>code-bql</module>
+        <module>code-lucene</module>
     </modules>
 
     <build>
